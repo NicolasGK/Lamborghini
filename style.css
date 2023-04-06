@@ -234,7 +234,6 @@ section h2 span{
 }
 
 .discover-link{
-  /* font-family: ; */
   max-width: 175px;
   padding: 10px 10px 10px 15px;
   color: #f1f1f1;
@@ -246,9 +245,20 @@ section h2 span{
   align-items: center;
   border: 1px solid #f1f1f168;
 }
+.discover-link:hover{
+  border: 1px solid #fff;
+}
 
 .discover-link img{
   width: 15px;
+  animation: 1s ease-out;
+  transform: translateX(-5px);
+  transition: transform 400ms cubic-bezier(.47,1.64,.41,.8);
+}
+.discover-link:hover img{
+  transform: translateX(-15px);
+  width: 18px;
+  
 }
 .discover-main-img{
   width: 50%;
