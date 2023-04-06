@@ -160,7 +160,10 @@ h1::after{
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;
-  transition: opacity 0.8s ease-out;
+  transition: all 0.8s ease-out;
+}
+.hero-push-link:hover{
+  border: 1px solid #fff;
 }
 
 .hero-push-link.active {
@@ -170,6 +173,11 @@ h1::after{
 .hero-push-link img{
   width: 30%;
   pointer-events: none;
+  transform: translateY(0px);
+  transition: transform 600ms cubic-bezier(.47,1.64,.41,.8);
+}
+.hero-push-link:hover img{
+  transform: translateY(3px);
 }
 
 @media (max-width: 1000px){
