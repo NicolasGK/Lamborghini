@@ -6,10 +6,6 @@
   margin: 0;
 }
 
-/* html{
-  scroll-behavior: smooth;
-} */
-
 html{
   cursor: none;
 }
@@ -181,6 +177,7 @@ h1::after{
     min-height: 600px;
     height: auto;
   }
+  
 }
 
 main.container{
@@ -225,7 +222,7 @@ section h2 span{
 
 .text-discover-content h3{
   font-family: Raleway;
-  font-size: clamp(16px, 3vw, 30px);
+  font-size: clamp(16px, 3vw, 20px);
   font-weight: 400;
   margin-bottom: 30px;
 }
