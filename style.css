@@ -115,7 +115,7 @@ h1::after{
   height: 100%;
   width: 3px;
   background: #ebebeb;
-  right: -10px;
+  right: 0px;
   top: 0;
   animation: carret 1s infinite;
 }
