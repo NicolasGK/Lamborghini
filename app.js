@@ -4,12 +4,12 @@ window.addEventListener("mousemove", handleCustomCursor);
 
 function handleCustomCursor(e) {
     customCursor.style.transform = `translate(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%))`
-}
+};
 
-const title = document.querySelector("h1")
+const title = document.querySelector("h1");
 const subtitle = document.querySelector(".subtitle");
 const heroPushLink = document.querySelector(".hero-push-link");
-const txt = "Lamborghini, set free."
+const txt = "Lamborghini, set free.";
 
 function typewriter(text, index) {
     if(index > 3) subtitle.classList.add("active");
@@ -20,10 +20,10 @@ function typewriter(text, index) {
             typewriter(text, index + 1)
         }, 100)
     }
-}
+};
 setTimeout(() => {
     typewriter(txt, 0)
-}, 300)
+}, 300);
 
 // Animation click down button
 heroPushLink.addEventListener("click", slideDown)
@@ -34,7 +34,7 @@ function slideDown(e) {
         top: document.querySelector(`${e.target.getAttribute("href")}`).offsetTop,
         behavior: "smooth"
     })
-}
+};
 
 // Apparition au scroll
 
@@ -55,9 +55,9 @@ const animatedContents = [
     ...generalAnimatedElements,
     ...discoverSectionElements,
     ...slideInContent,
-]
+];
 
-const intersectionObserver = new IntersectionObserver(handleIntersect, {rootMargin: "-10%"})
+const intersectionObserver = new IntersectionObserver(handleIntersect, {rootMargin: "-10%"});
 
 animatedContents.forEach(el => intersectionObserver.observe(el))
 
@@ -68,4 +68,4 @@ function handleIntersect(entries){
             intersectionObserver.unobserve(entry.target)
         }
     })
-}
+};
